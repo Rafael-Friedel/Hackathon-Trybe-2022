@@ -56,16 +56,20 @@ const AssociateBenefits = () => {
       )}
       {truck && (
         <p>
-          Frete gratuito para regiões Sul e Sudeste em compras acima de R$ 99. Para as demais regiões
+          Frete gratuito para regiões Sul e Sudeste em compras acima de R$ 99.
           {' '}
-          e abaixo deste valor, a taxa de entrega é reduzida. Você pode conferir o valor do frete no carrinho de compras.
+          Para as demais regiões e abaixo deste valor, a taxa de entrega é reduzida.
+          {' '}
+          Você pode conferir o valor do frete no carrinho de compras.
         </p>
       )}
       {gift && (
         <p>
-          Se o indicado assinar o Clube Wine usando o seu código de indicação, vocês ganham o brinde do mês + cashback para usar no app.
+          Se o indicado assinar o Clube Wine usando o seu código de indicação,
           {' '}
-          Indique quantos amigos quiser: quanto mais indicar, mais cashback você vai ganhar!
+          vocês ganham o brinde do mês + cashback para usar no app. Indique quantos
+          {' '}
+          amigos quiser: quanto mais indicar, mais cashback você vai ganhar!
         </p>
       )}
     </section>

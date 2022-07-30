@@ -5,23 +5,29 @@ export const Context = createContext();
 
 const Provider = ({ children }) => {
   const [state, setState] = useState({
-    plans: [],
+    plans: {},
     wines: [],
+    loading: true,
+    cart: [],
   });
-  const { plans, wines } = state;
+  const { plans, wines, loading } = state;
 
   const getPlans = async () => {
     const url = 'https://wine-club-proxy.herokuapp.com/modalities';
     const result = await fetch(url);
-    const [{ plans: modalities }] = await result.json();
+    const [data] = await result.json();
     setState((prevSt) => ({
       ...prevSt,
-      plans: modalities,
+      plans: data,
+      loading: false,
     }));
   };
 
   const getWines = async () => {
-    const url = 'https://wine-back-test.herokuapp.com/products?page=1&limit=10';
+    const six = 6;
+    let url = 'https://wine-back-test.herokuapp.com/products?page=';
+    const number = Math.floor(Math.random() * six + 1);
+    url += `${number}&limit=10`;
     const result = await fetch(url);
     const { items } = await result.json();
     setState((prevSt) => ({
@@ -35,14 +41,19 @@ const Provider = ({ children }) => {
     getWines();
   }, []);
 
+  const addToCart = (item) => {
+    setState((prevSt) => ({
+      ...prevSt,
+      cart: [...prevSt.cart, item],
+    }));
+  };
+
   const value = {
     plans,
     wines,
+    loading,
+    addToCart,
   };
-
-  useEffect(() => {
-    value.plans = plans;
-  }, [plans]);
 
   return (
     <Context.Provider value={ value }>
