@@ -1,4 +1,5 @@
 import React from 'react';
+import style from '../styles/banner.module.css';
 
 const BannerTwo = () => (
   <section>
