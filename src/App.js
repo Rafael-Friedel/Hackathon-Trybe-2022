@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Main from './pages/Main';
 import Checkout from './pages/Checkout';
 import ListPage from './pages/ListPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/checkout" element={ <Checkout /> } />
           <Route path="/products" element={ <ListPage /> } />
         </Routes>
+        <Footer />
       </Provider>
     </div>
   );
