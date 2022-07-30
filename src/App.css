@@ -1,13 +1,24 @@
 :root {
+
   --main: rgb(245, 245, 245);
+
   --secondary: rgb(36, 29, 27);
+
   --accent: rgb(126, 188, 67);
+
   --pink: rgb(230, 111, 146);
+
   --pinkish: rgb(245, 214, 220);
+
   --teal: rgb(103, 192, 165);
+
   --tealish: rgb(213, 233, 226);
+
   --yellow: rgb(245, 185, 80);
+
   --yellowish: rgb(255, 255, 255);
+
+  --brown: rgb(194, 151, 124);
 }
 
 .App {
