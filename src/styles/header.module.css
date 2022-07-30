@@ -1,0 +1,31 @@
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 12px 24px;
+  box-shadow: 0 0 10px var(--secondary);
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.aside {
+  align-items: center;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  height: 50px;
+  width: 50px;
+}
