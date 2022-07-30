@@ -67,4 +67,92 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+6. Crie um novo `Pull Request` _(PR)_
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/hackathon-t19-wine/pulls)
+  * Clique no botão verde _"New pull request"_
+  * Clique na caixa de seleção _"Compare"_ e escolha a branch do grupo, `branch-main-do-grupo`, e a sua branch **com atenção**
+  * Coloque um título para a sua _Pull Request_
+    * Exemplo: _"[GRUPO XX] Cria tela de busca"_
+  * Clique no botão verde _"Create pull request"_
+  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+  * **Não se preocupe em preencher mais nada por enquanto!**
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/hackathon-t19-wine/pulls) e confira que o seu _Pull Request_ está criado
+
+7. Assim que aprovado por pelo menos duas pessoas do seu grupo e o _Linter_ estiver adereçado, acesse **SEU** _Pull Request_ e clique no botão _"Merge pull request"_
+
+### Durante o desenvolvimento
+
+* Faça `commits` das alterações que você fizer no código regularmente
+
+* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
+
+* Os comandos que você utilizará com mais frequência são:
+
+1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
+
+2. `git add` _(para adicionar arquivos ao stage do Git)_
+
+3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
+
+4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
+
+        * `git commit -m 'cria componente de input`
+        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
+
+5. Adicione a sua branch com o novo `commit` ao repositório remoto
+  * Usando o exemplo anterior: `git push -u origin branch-main-do-grupo-cria-campo-de-input`
+
+6. Crie um novo `Pull Request` _(PR)_
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/hackathon-t19-wine/pulls)
+  * Clique no botão verde _"New pull request"_
+  * Clique na caixa de seleção _"Compare"_ e escolha a branch do grupo, `branch-main-do-grupo`, e a sua branch **com atenção**
+  * Coloque um título para a sua _Pull Request_
+    * Exemplo: _"[branch-main-do-grupo] Cria tela de busca"_
+  * Clique no botão verde _"Create pull request"_
+  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+  * **Não se preocupe em preencher mais nada por enquanto!**
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/hackathon-t19-wine/pulls) e confira que o seu _Pull Request_ está criado
+
+### Durante o desenvolvimento
+
+* Faça `commits` das alterações que você fizer no código regularmente
+
+* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
+
+* Os comandos que você utilizará com mais frequência são:
+
+1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
+
+2. `git add` _(para adicionar arquivos ao stage do Git)_
+
+3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
+
+4. `git push -u nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
+
+5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
+
+---
+
+# Como desenvolver
+
+Este repositório não conta com branches para cada grupo, então cada um será responsável por criar a branch principal do grupo e abrir o Pull Request a partir dela.
+
+Recomendamos que utilize o nome ou número do grupo na branch, para facilitar a identificação dos responsáveis. Exemplo: "grupo-1-hackathon".
+
+
+## APIs
+
+Neste link você encontra a documentação da API de produtos, junto com sugestões de sua utilização!
+
+Para adequar ao JavaScript, basta selecionar a linguagem JavaScript-Fetch no canto superior.
+https://documenter.getpostman.com/view/10015622/UVJiiuHi#fe849253-c47a-492f-a860-08350296c570
+
+Link direto para a API: https://wine-back-test.herokuapp.com/products?page=1&limit=10
+
+Para a API de modalidades, o link direto: https://wine-club-proxy.herokuapp.com/modalities
+
+##teste
+
