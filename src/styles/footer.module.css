@@ -29,7 +29,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 220px;
-  max-width: 50%;
+  max-width: 40%;
   height: 50%;
   flex-wrap: wrap;
   justify-content: center;
@@ -90,4 +90,24 @@
 
 .social {
   font-size: 1.6rem;
+}
+
+@media screen and ( max-width : 1230px ) {
+
+
+  .footer {
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: row;
+    margin-right: 12px;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .links_store, .links_club, .links_account, .links_also {
+    bottom: 15%;
+    left: 80px;
+  }
 }

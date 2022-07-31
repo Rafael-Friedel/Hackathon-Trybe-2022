@@ -1,6 +1,8 @@
 import React from 'react';
 import qrCode from '../images/qrCode.png';
 import style from '../styles/appAdd.module.css';
+import phone from '../images/phone.png';
+import wine from '../images/ilustration_wine.png';
 
 const AppAdd = () => (
   <section className={ style.main_sect }>
@@ -19,7 +21,12 @@ const AppAdd = () => (
         <p>Comprando da Winelist dos seus amigos ambos ganham!</p>
       </section>
       <section className={ style.imgs }>
-        <img src="" alt="Imagem do aplicativo da Wine" />
+        <img className={ style.phone } src={ phone } alt="Imagem do aplicativo da Wine" />
+        <img
+          className={ style.wine }
+          src={ wine }
+          alt="Duas pessoas colocando vinho em uma taça gigante"
+        />
       </section>
       <img
         className={ style.qr }

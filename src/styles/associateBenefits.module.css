@@ -51,13 +51,14 @@
 }
 
 .p_sect {
+  max-width: 400px;
   width: 50%;
   margin-bottom: 12px;
-  min-height: 105px;
+  min-height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 200px;
+  /* max-width: 200px; */
 }
 
 .p_sect p {

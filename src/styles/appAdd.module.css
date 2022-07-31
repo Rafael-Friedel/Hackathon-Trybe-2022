@@ -18,9 +18,14 @@
 .sect_main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 90%;
+}
+
+.data {
+  width: 35%;
+  min-width: 250px;
 }
 
 .data p {
@@ -32,8 +37,14 @@
 }
 
 .imgs {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 40%;
+  min-width: 300px;
+  position: relative;
+  margin: 12px;
+}
+
+.wine {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
