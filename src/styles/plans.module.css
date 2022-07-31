@@ -1,7 +1,8 @@
 .main_sect {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
   padding: 24px;
@@ -61,6 +62,7 @@
 
 .main_sect img {
   width: 50%;
+  min-width: 450px;
   max-height: 700px;
   object-fit: cover;
   object-position: 0% 80%;
@@ -88,7 +90,8 @@
 
 .cards_sect {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 24px 0;
   width: 100%;
 }
@@ -104,6 +107,7 @@
   padding: 12px 24px;
   position: relative;
   border-radius: 8px;
+  margin: 24px;
 }
 
 .plan_card h3 {
@@ -172,4 +176,11 @@
 
 .btn:active {
   box-shadow: inset 1px 1px 5px var(--secondary);
+}
+
+@media screen and ( max-width : 1180px ) {
+
+  .main_sect img {
+    display: none;
+  }
 }
