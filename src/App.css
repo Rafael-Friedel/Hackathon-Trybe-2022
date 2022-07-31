@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap'); 
+
 :root {
 
   --main: rgb(245, 245, 245);
@@ -29,6 +31,7 @@
   padding: 0;
   font-size: 1.1rem;
   text-decoration: none;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
 body {

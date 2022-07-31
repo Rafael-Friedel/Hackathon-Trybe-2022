@@ -6,7 +6,7 @@ import style from '../styles/banner.module.css';
 
 const Banner = () => {
   const [state, setState] = useState({
-    index: 0,
+    index: 1,
     components: [<BannerOne key="1" />, <BannerTwo key="2" />, <BannerThree key="3" />],
     time: 1000,
   });
