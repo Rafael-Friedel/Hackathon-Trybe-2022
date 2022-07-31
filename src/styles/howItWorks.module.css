@@ -19,7 +19,8 @@
 
 .steps_sect {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   margin: 32px;
 }
@@ -37,7 +38,9 @@
   align-items: center;
   justify-content: space-between;
   width: 300px;
-  height: 320px;
+  max-width: 45%;
+  text-align: center;
+  margin: 12px;
 }
 
 .step1 h3, .step2 h3, .step3 h3, .step4 h3 {
@@ -51,4 +54,15 @@
 
 .step3 {
   height: 290px;
+}
+
+@media screen and ( max-width : 700px ) {
+
+  .main_section h2 {
+    font-size: 2rem;
+  }
+
+  .main_p {
+    font-size: 1.5rem;
+  }
 }
