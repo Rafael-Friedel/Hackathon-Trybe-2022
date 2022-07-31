@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from '../images/logo.png';
 import search from '../images/Busca.svg';
 import profile from '../images/logado.svg';
@@ -8,6 +9,10 @@ import style from '../styles/header.module.css';
 
 const Header = () => (
   <header className={ style.header }>
+    <label htmlFor="menu" className={ style.menu_label }>
+      <GiHamburgerMenu className={ style.menu_icon } />
+      <input type="checkbox" id="menu" className={ style.menu_check } />
+    </label>
     <img className={ style.logo } src={ logo } alt="Logotipo da Wine clube" />
     <nav className={ style.nav }>
       <Link className={ style.link } to="/">
