@@ -47,10 +47,32 @@ button:hover {
   opacity: 0.8;
 }
 
+button:active {
+  box-shadow: inset 1px 1px 5px var(--secondary);
+}
+
 main {
   width: 80%;
   margin: 16px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--tealish);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
 }
