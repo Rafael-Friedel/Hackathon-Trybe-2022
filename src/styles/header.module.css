@@ -13,6 +13,7 @@
 
 .logo {
   width: 100px;
+  max-width: 15%;
 }
 
 .nav {
@@ -20,11 +21,14 @@
   display: flex;
   justify-content: space-around;
   width: 50%;
+  background-color: var(--main);
 }
 
 .aside {
   align-items: center;
-  width: 15%;
+  flex-wrap: wrap;
+  width: 200px;
+  max-width: 40%;
   display: flex;
   justify-content: space-between;
 }
@@ -38,10 +42,12 @@
 
   .header {
     position: relative;
+    padding: 8px 12px;
   }
 
   .menu_label {
     display: block;
+    order: -1;
   }
 
   .menu_check {
@@ -55,13 +61,20 @@
     align-items: flex-start;
     background-color: var(--main);
     position: absolute;
-    width: 150px;
-    top: 70px;
+    width: 130px;
+    top: 67px;
+    left: 0;
     padding: 8px;
-    transform: translateX(-500%);
+    transform: translateX(-150%);
+    box-shadow: 0  5px 15px var(--secondary);
+    transition: all 0.2s ease;
   }
 
-  .menu_check:checked .nav{
-    transform: translateX(-290%);
+  .menu_check:checked .header > .nav {
+    transform: translateX(0);
+  }
+
+  .aside {
+    justify-content: center;
   }
 }
