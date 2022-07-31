@@ -44,7 +44,7 @@ const Footer = () => (
         </section>
       </section>
       <section className={ style.also }>
-        <Link className={ style.also_link } to="/products">CONHEÇA TAMBÉM</Link>
+        <Link className={ style.also_link } to="/">CONHEÇA TAMBÉM</Link>
         <section className={ style.links_also }>
           <Link className={ style.link } to="/">Institucional</Link>
           <Link className={ style.link } to="/">Lojas Oficiais</Link>

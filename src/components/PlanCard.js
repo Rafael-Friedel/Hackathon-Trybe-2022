@@ -40,7 +40,7 @@ const PlanCard = ({ plan }) => {
         {' '}
         {gift || 'Nenhum brinde'}
       </p>
-      <Link className={ style.btn } to="/checkout">
+      <Link className={ style.btn } to="/">
         Assinar
         {` ${name.split(' ')[1]}`}
       </Link>

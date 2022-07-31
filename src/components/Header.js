@@ -53,13 +53,13 @@ const Header = () => {
         <Link className={ style.link } to="/">
           Clube
         </Link>
-        <Link className={ style.link } to="/products">
+        <Link className={ style.link } to="/">
           Loja
         </Link>
         <Link className={ style.link } to="/">
           Produtores
         </Link>
-        <Link className={ style.link } to="/products">
+        <Link className={ style.link } to="/">
           Ofertas
         </Link>
         <Link className={ style.link } to="/">
