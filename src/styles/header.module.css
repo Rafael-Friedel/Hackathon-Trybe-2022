@@ -24,6 +24,19 @@
   background-color: var(--main);
 }
 
+.link {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.link:hover {
+  opacity: 0.9;
+}
+
+.link:active {
+  color: var(--pink);
+}
+
 .aside {
   align-items: center;
   flex-wrap: wrap;
