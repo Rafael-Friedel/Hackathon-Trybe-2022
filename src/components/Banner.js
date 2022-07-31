@@ -8,7 +8,7 @@ const Banner = () => {
   const [state, setState] = useState({
     index: 0,
     components: [<BannerOne key="1" />, <BannerTwo key="2" />, <BannerThree key="3" />],
-    time: 10,
+    time: 1000,
   });
   const { index, components, time } = state;
 
@@ -50,7 +50,7 @@ const Banner = () => {
   };
 
   return (
-    <>
+    <section className={ style.banner_sect }>
       {components[index]}
       <ul className={ style.btns }>
         <li
@@ -69,7 +69,7 @@ const Banner = () => {
           role="presentation"
         />
       </ul>
-    </>
+    </section>
   );
 };
 

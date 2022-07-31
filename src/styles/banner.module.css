@@ -1,3 +1,11 @@
+.banner_sect {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .banner1, .banner2, .banner3 {
   background-size: cover;
   display: flex;
@@ -5,6 +13,7 @@
   align-items: center;
   justify-content: space-evenly;
   height: 550px;
+  max-height: 80vh;
   width: 105%;
 }
 
@@ -27,7 +36,8 @@
   padding: 8px 16px;
   background-color: var(--brown);
   border-radius: 8px;
-  min-width: 200px;
+  min-width: 100px;
+  width: 50%;
   text-align: center;
   color: var(--yellowish);
   font-weight: 500;
@@ -47,39 +57,38 @@
   background-position: 0% 25%;
   align-items: flex-start;
   justify-content: center;
-  padding-left: 60px;
+  padding-left: 5%;
+}
+
+.banner2_content {
+  width: 450px;
+  max-width: 30%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 20px 12px;
 }
 
 .banner2 h1 {
-  width: 450px;
-  background-color: rgba(255, 255, 255, 0.3);
   font-size: 3rem;
   text-align: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  padding: 20px 12px 0;
 }
 
 .banner2 p {
-  width: 450px;
   justify-self: center;
   font-size: 2.5rem;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.3);
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  padding: 0 12px 20px;
 }
 
 .banner3 {
   background-image: url('../images/company.png');
   background-position: 0% 100%;
   align-items: flex-start;
-  padding: 60px;
+  padding: 5%;
 }
 
 .banner3 section {
   width: 550px;
+  max-width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,4 +127,57 @@
 .active {
   background-color: var(--brown);
   cursor: pointer;
+}
+
+@media screen and ( max-width : 900px ) {
+
+  .banner1 h1{
+    font-size: 3rem;
+  }
+
+  .banner1 li {
+    font-size: 1.5rem;
+    margin: 2px;
+  }
+
+  .link, .link3 {
+    font-size: 1.2rem;
+  }
+
+  .banner2 h1 {
+    font-size: 2rem;
+  }
+
+  .banner2 p {
+    font-size: 1.5rem;
+  }
+
+  .banner3 {
+    background-position: 50% 0%;
+  }
+
+  .banner3 h1 {
+    font-size: 2rem;
+  }
+
+  .link3 {
+    background-color: var(--pink);
+    color: var(--secondary);
+  }
+}
+
+@media screen  and ( max-width : 500px ) {
+
+  .banner2_content {
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 50%;
+  }
+
+  .banner3 {
+    background-position: 60% 0%;
+  }
+
+  .banner3 section {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
 }
