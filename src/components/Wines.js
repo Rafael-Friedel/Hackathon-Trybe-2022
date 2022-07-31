@@ -8,7 +8,7 @@ const Wines = () => {
   const { wines } = useContext(Context);
   return (
     <section className={ style.main_sect }>
-      <Link to="/products" className={ style.title }>Vinhos recomendados</Link>
+      <Link to="/" className={ style.title }>Vinhos recomendados</Link>
       <section className={ style.cards_sect }>
         {wines.map((wine) => (
           <WineCard wine={ wine } key={ wine.id } />

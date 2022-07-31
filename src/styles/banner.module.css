@@ -38,10 +38,10 @@
   color: var(--yellowish);
   font-size: 1.2rem;
   font-weight: 500;
-  min-width: 100px;
+  min-width: 150px;
   padding: 8px 16px;
   text-align: center;
-  width: 50%;
+  width: 20%;
 }
 
 .link:hover, .link3:hover {
