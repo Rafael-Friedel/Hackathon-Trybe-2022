@@ -1,0 +1,93 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 60px;
+  position: relative;
+  min-height: 200px;
+  margin-top: 32px;
+  box-shadow: 0 0 10px var(--secondary);
+}
+
+.nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link {
+  margin: 0 12px;
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.links_store, .links_club, .links_account, .links_also {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 220px;
+  width: 50%;
+  height: 50%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.store, .club, .account, .also {
+  display: flex;
+}
+
+.store:hover .links_store, .club:hover .links_club, .account:hover .links_account, .also:hover .links_also {
+  display: flex;
+}
+
+.store_link, .club_link, .account_link, .also_link {
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.store_link:hover, .club_link:hover, .account_link:hover, .also_link:hover, .link:hover {
+  opacity: 0.9;
+  border-bottom: 1px solid var(--teal);
+}
+
+.store_link:active, .club_link:active, .account_link:active, .also_link:active, .link:active {
+  color: var(--pink);
+}
+
+.aside {
+  max-width: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+
+.aside a {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+.aside a:hover {
+ opacity: 0.9;
+}
+
+.aside a:active {
+  color: var(--pink);
+}
+
+.socials {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.social {
+  font-size: 1.6rem;
+}

@@ -26,7 +26,7 @@ const AssociateBenefits = () => {
       <section className={ style.items_sect }>
         <section
           onClick={ () => handleClick('ticket') }
-          className={ ticket && style.active }
+          className={ ticket ? style.active : '' }
           role="presentation"
         >
           <TbTicket className={ style.icon } />
@@ -34,7 +34,7 @@ const AssociateBenefits = () => {
         </section>
         <section
           onClick={ () => handleClick('money') }
-          className={ money && style.active }
+          className={ money ? style.active : '' }
           role="presentation"
         >
           <GiTakeMyMoney className={ style.icon } />
@@ -42,7 +42,7 @@ const AssociateBenefits = () => {
         </section>
         <section
           onClick={ () => handleClick('truck') }
-          className={ truck && style.active }
+          className={ truck ? style.active : '' }
           role="presentation"
         >
           <BsTruck className={ style.icon } />
@@ -50,7 +50,7 @@ const AssociateBenefits = () => {
         </section>
         <section
           onClick={ () => handleClick('gift') }
-          className={ gift && style.active }
+          className={ gift ? style.active : '' }
           role="presentation"
         >
           <ImGift className={ style.icon } />
