@@ -2,40 +2,45 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { ImGift } from 'react-icons/im';
 import { Link } from 'react-router-dom';
+import style from '../styles/plans.module.css';
 
 const PlanCard = ({ plan }) => {
   const { name, price, priceWithDiscount, gift, promotion } = plan;
   const economy = (price - priceWithDiscount).toFixed(2);
   const twelve = 12;
   return (
-    <section>
-      <h3>{name}</h3>
-      <p>{promotion}</p>
-      <p>
+    <section className={ style.plan_card }>
+      <h3 className={ style.plan_name }>{name}</h3>
+      <p className={ style.plan_promo }>{promotion}</p>
+      <p className={ style.price }>
         De
         {' '}
-        <span>{`R$ ${price.toFixed(2).replace('.', ',')}`}</span>
+        <del>
+          {`R$ ${price.toFixed(2).replace('.', ',')}`}
+        </del>
         {' '}
         por
       </p>
-      <p>
+      <p className={ style.plan_price_discount }>
         R$
         {' '}
-        <span>{priceWithDiscount.toFixed(2).replace('.', ',')}</span>
+        <strong>
+          {priceWithDiscount.toFixed(2).replace('.', ',')}
+        </strong>
         {' '}
         /mês
       </p>
-      <p>
+      <p className={ style.economy }>
         {`Economia de R$${name.includes('Anual')
           ? (economy * twelve).toString().replace('.', ',') : economy.replace('.', ',')}
         em ${name.includes('Anual') ? '12 meses' : '1 mês'}`}
       </p>
-      <p>
+      <p className={ style.gift }>
         <ImGift />
         {' '}
         {gift || 'Nenhum brinde'}
       </p>
-      <Link to="/checkout">
+      <Link className={ style.btn } to="/checkout">
         Assinar
         {` ${name.split(' ')[1]}`}
       </Link>
