@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
 :root {
 
   --main: rgb(245, 245, 245);
@@ -16,50 +18,68 @@
 
   --yellow: rgb(245, 185, 80);
 
-  --yellowish: rgb(255, 255, 255);
+  --yellowish: rgb(246, 222, 180);
 
-  --brown: rgb(194, 151, 124);
+  --light-brown: rgb(194, 151, 124);
+
+  --brown: rgb(191, 84, 7);
 }
 
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: 'Baloo 2', cursive, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: var(--secondary);
+  background-color: var(--main);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::selection {
+  background-color: var(--teal);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 5px var(--secondary);
+}
+
+main {
+  width: 80%;
+  margin: 16px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar {
+  width: 12px;
+  height: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+::-webkit-scrollbar-track {
+  background: var(--tealish);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--teal);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--yellow);
+}
+
+@media screen and ( max-width : 900px ) {
+
+  main {
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.icon {
-  font-size: 5rem;
 }

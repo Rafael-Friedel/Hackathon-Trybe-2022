@@ -1,0 +1,69 @@
+.main_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+}
+
+.main_section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.main_p {
+  font-size: 2rem;
+  text-align: center;
+  width: 70%;
+}
+
+.steps_sect {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 32px;
+}
+
+.steps_sect img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.step1, .step2, .step3, .step4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  max-width: 45%;
+  text-align: center;
+  margin: 12px;
+}
+
+.step1 h3, .step2 h3, .step3 h3, .step4 h3 {
+  font-size: 2rem;
+}
+
+.step1 p, .step2 p, .step3 p, .step4 p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.step3 {
+  height: 290px;
+}
+
+@media screen and ( max-width : 700px ) {
+
+  .main_section h2 {
+    font-size: 2rem;
+  }
+
+  .main_p {
+    font-size: 1.5rem;
+  }
+}

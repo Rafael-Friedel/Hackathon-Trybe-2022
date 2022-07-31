@@ -1,0 +1,36 @@
+.associate {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+
+.associate section {
+  align-items: center;
+  display: flex;
+  background-color: var(--yellowish);
+  color: var(--brown);
+  border-radius: 8px;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+  width: 70%;
+  min-width: 350px;
+}
+
+.associate img {
+  border: 1.5px solid var(--brown);
+  border-radius: 50%;
+  height: 50px;
+  margin-left: 12px;
+  width: 50px;
+}
+
+.associate p {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 47%;
+  min-width: 200px;
+}

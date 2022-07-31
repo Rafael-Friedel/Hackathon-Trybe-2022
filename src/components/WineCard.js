@@ -2,41 +2,48 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { RiStarSFill } from 'react-icons/ri';
 import { Context } from '../provider/provider';
+import style from '../styles/wines.module.css';
 
 const WineCard = ({ wine }) => {
   const { addToCart } = useContext(Context);
   const { image, name, rating, discount, price, priceMember, priceNonMember } = wine;
   return (
-    <section>
-      {!!rating && (
-        <p>
-          <RiStarSFill />
+    <section className={ style.card_sect }>
+      {rating ? (
+        <p className={ style.rating }>
+          <RiStarSFill className={ style.star } />
           {' '}
           {rating}
         </p>
+      ) : (
+        <p className={ style.rating }>
+          <RiStarSFill className={ style.star } />
+          {' '}
+          -
+        </p>
       )}
-      <img src={ image } alt={ name } />
-      <p>{name}</p>
-      <p>
-        Sócio Wine R$
+      <img className={ style.img } src={ image } alt={ name } />
+      <p className={ style.name }>{name}</p>
+      <p className={ style.price }>
+        Sócio Wine:
         {' '}
-        {priceMember.toFixed(2).replace('.', ',')}
+        <strong>{`R$ ${priceMember.toFixed(2).replace('.', ',')}`}</strong>
       </p>
-      <p>
-        Não sócio R$
+      <p className={ style.price_not }>
+        Não sócio:
         {' '}
-        {priceNonMember.toFixed(2).replace('.', ',')}
+        <strong>{`R$ ${priceNonMember.toFixed(2).replace('.', ',')}`}</strong>
       </p>
-      <p>
-        R$
-        {' '}
-        <span>{price.toFixed(2).replace('.', ',')}</span>
+      <p className={ style.full_price }>
+        {`R$ ${price.toFixed(2).replace('.', ',')}`}
       </p>
-      <p>
+      <p className={ style.off }>
         {discount}
         % OFF
       </p>
-      <button type="button" onClick={ () => addToCart(wine) }>Adicionar</button>
+      <button className={ style.btn } type="button" onClick={ () => addToCart(wine) }>
+        Adicionar
+      </button>
     </section>
   );
 };

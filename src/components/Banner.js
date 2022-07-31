@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import BannerOne from './BannerOne';
 import BannerThree from './BannerThree';
 import BannerTwo from './BannerTwo';
+import style from '../styles/banner.module.css';
 
 const Banner = () => {
   const [state, setState] = useState({
     index: 0,
     components: [<BannerOne key="1" />, <BannerTwo key="2" />, <BannerThree key="3" />],
-    time: 10,
+    time: 1000,
   });
   const { index, components, time } = state;
 
@@ -49,14 +50,26 @@ const Banner = () => {
   };
 
   return (
-    <>
+    <section className={ style.banner_sect }>
       {components[index]}
-      <ul>
-        <li onClick={ () => changeBanner(0) } role="presentation" />
-        <li onClick={ () => changeBanner(1) } role="presentation" />
-        <li onClick={ () => changeBanner(2) } role="presentation" />
+      <ul className={ style.btns }>
+        <li
+          onClick={ () => changeBanner(0) }
+          className={ index === 0 ? style.active : style.inactive }
+          role="presentation"
+        />
+        <li
+          onClick={ () => changeBanner(1) }
+          className={ index === 1 ? style.active : style.inactive }
+          role="presentation"
+        />
+        <li
+          onClick={ () => changeBanner(2) }
+          className={ index === 2 ? style.active : style.inactive }
+          role="presentation"
+        />
       </ul>
-    </>
+    </section>
   );
 };
 
