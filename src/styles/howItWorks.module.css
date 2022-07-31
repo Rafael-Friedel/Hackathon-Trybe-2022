@@ -1,10 +1,10 @@
 .main_section {
-  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin: 24px;
+  width: 100%;
 }
 
 .main_section h2 {
@@ -20,28 +20,28 @@
 
 .steps_sect {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: center;
   margin: 32px;
+  width: 100%;
 }
 
 .steps_sect img {
-  width: 150px;
+  border-radius: 50%;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%;
+  width: 150px;
 }
 
 .step1, .step2, .step3, .step4 {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  width: 300px;
+  margin: 12px;
   max-width: 45%;
   text-align: center;
-  margin: 12px;
+  width: 300px;
 }
 
 .step1 h3, .step2 h3, .step3 h3, .step4 h3 {

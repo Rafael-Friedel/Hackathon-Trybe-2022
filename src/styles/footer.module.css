@@ -1,39 +1,39 @@
 .footer {
-  width: 100%;
+  align-items: center;
+  box-shadow: 0 0 10px var(--secondary);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 32px;
+  min-height: 200px;
   padding: 32px 60px;
   position: relative;
-  min-height: 200px;
-  margin-top: 32px;
-  box-shadow: 0 0 10px var(--secondary);
+  width: 100%;
 }
 
 .nav {
-  flex-grow: 1;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  flex-grow: 1;
 }
 
 .link {
-  margin: 0 12px;
   color: var(--secondary);
   font-weight: 500;
+  margin: 0 12px;
 }
 
 .links_store, .links_club, .links_account, .links_also {
+  align-items: center;
   display: none;
+  flex-wrap: wrap;
+  height: 50%;
+  justify-content: center;
+  left: 220px;
+  max-width: 40%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 220px;
-  max-width: 40%;
-  height: 50%;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .store, .club, .account, .also {
@@ -50,8 +50,8 @@
 }
 
 .store_link:hover, .club_link:hover, .account_link:hover, .also_link:hover, .link:hover {
-  opacity: 0.9;
   border-bottom: 1px solid var(--teal);
+  opacity: 0.9;
 }
 
 .store_link:active, .club_link:active, .account_link:active, .also_link:active, .link:active {
@@ -59,13 +59,13 @@
 }
 
 .aside {
-  max-width: 500px;
-  width: 50%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   height: 90%;
+  justify-content: space-between;
+  max-width: 500px;
+  width: 50%;
 }
 
 .aside a {
@@ -82,10 +82,10 @@
 }
 
 .socials {
-  width: 30%;
   display: flex;
   justify-content: space-between;
   margin-top: 12px;
+  width: 30%;
 }
 
 .social {
@@ -101,8 +101,8 @@
 
   .nav {
     flex-direction: row;
-    margin-right: 12px;
     justify-content: space-between;
+    margin-right: 12px;
     text-align: center;
   }
 

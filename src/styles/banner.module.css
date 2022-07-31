@@ -1,18 +1,18 @@
 .banner_sect {
-  width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .banner1, .banner2, .banner3 {
+  align-items: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   height: 550px;
+  justify-content: space-evenly;
   max-height: 80vh;
   width: 105%;
 }
@@ -33,15 +33,15 @@
 }
 
 .link, .link3 {
-  padding: 8px 16px;
   background-color: var(--brown);
   border-radius: 8px;
-  min-width: 100px;
-  width: 50%;
-  text-align: center;
   color: var(--yellowish);
-  font-weight: 500;
   font-size: 1.2rem;
+  font-weight: 500;
+  min-width: 100px;
+  padding: 8px 16px;
+  text-align: center;
+  width: 50%;
 }
 
 .link:hover, .link3:hover {
@@ -53,19 +53,19 @@
 }
 
 .banner2 {
+  align-items: flex-start;
   background-image: url('../images//women.jpg');
   background-position: 0% 25%;
-  align-items: flex-start;
   justify-content: center;
   padding-left: 5%;
 }
 
 .banner2_content {
-  width: 450px;
-  max-width: 30%;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 12px;
+  max-width: 30%;
   padding: 20px 12px;
+  width: 450px;
 }
 
 .banner2 h1 {
@@ -74,28 +74,28 @@
 }
 
 .banner2 p {
-  justify-self: center;
   font-size: 2.5rem;
+  justify-self: center;
   text-align: center;
 }
 
 .banner3 {
+  align-items: flex-start;
   background-image: url('../images/company.png');
   background-position: 0% 100%;
-  align-items: flex-start;
   padding: 5%;
 }
 
 .banner3 section {
-  width: 550px;
-  max-width: 50%;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 50%;
   padding: 12px 24px;
-  border-radius: 12px;
+  width: 550px;
 }
 
 .banner3 h1 {
@@ -111,17 +111,17 @@
 .btns {
   display: flex;
   justify-content: space-between;
-  width: 50px;
   margin-top: 12px;
+  width: 50px;
 }
 
 .inactive, .active {
-  list-style: none;
-  height: 10px;
-  width: 10px;
   background-color: var(--yellowish);
   border-radius: 50%;
   cursor: pointer;
+  height: 10px;
+  list-style: none;
+  width: 10px;
 }
 
 .active {

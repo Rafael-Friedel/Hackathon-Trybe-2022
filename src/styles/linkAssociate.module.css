@@ -8,15 +8,15 @@
 
 .associate section {
   align-items: center;
-  display: flex;
   background-color: var(--yellowish);
-  color: var(--brown);
   border-radius: 8px;
+  color: var(--brown);
+  display: flex;
   justify-content: center;
-  text-align: center;
-  padding: 12px;
-  width: 70%;
   min-width: 350px;
+  padding: 12px;
+  text-align: center;
+  width: 70%;
 }
 
 .associate img {
@@ -31,6 +31,6 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  width: 47%;
   min-width: 200px;
+  width: 47%;
 }

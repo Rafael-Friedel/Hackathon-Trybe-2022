@@ -1,13 +1,13 @@
 .main_sect {
-  width: 100%;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin: 24px;
-  background-color: white;
-  border-radius: 8px;
   padding: 32px 0;
+  width: 100%;
 }
 
 .main_sect h1 {
@@ -16,16 +16,16 @@
 }
 
 .sect_main {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   width: 90%;
 }
 
 .data {
-  width: 35%;
   min-width: 250px;
+  width: 35%;
 }
 
 .data p {
@@ -37,14 +37,14 @@
 }
 
 .imgs {
-  width: 40%;
+  margin: 12px;
   min-width: 300px;
   position: relative;
-  margin: 12px;
+  width: 40%;
 }
 
 .wine {
-  position: absolute;
   bottom: 0;
+  position: absolute;
   right: 0;
 }
