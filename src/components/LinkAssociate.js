@@ -5,7 +5,7 @@ import style from '../styles/linkAssociate.module.css';
 import wines from '../images/benefits-icon.svg';
 
 const LinkAssociate = () => (
-  <Link className={ style.associate } to="/products">
+  <Link className={ style.associate } to="/">
     <section>
       <p>
         Já sou sócio!

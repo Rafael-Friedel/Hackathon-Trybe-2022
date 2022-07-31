@@ -11,7 +11,7 @@ const BannerOne = () => (
       <li>Mais cashback</li>
       <li>Entrega diferenciada</li>
     </ul>
-    <Link className={ style.link } to="/checkout">Vire sócio!</Link>
+    <Link className={ style.link } to="/">Vire sócio!</Link>
   </section>
 );
 
